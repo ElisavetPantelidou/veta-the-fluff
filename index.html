@@ -210,8 +210,15 @@
         </footer>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright © Veta The Fluff </small></div>
-        </div>
+    <div class="container">
+        <small>Copyright © <span id="current-year"></span> Veta The Fluff</small>
+    </div>
+</div>
+
+<!-- Script for automatic year update -->
+<script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+</script> 
         <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
